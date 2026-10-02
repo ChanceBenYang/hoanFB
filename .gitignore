@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# PHP / app
+/vendor/
+*.log
+.cache/
+.phpintel/
+.phpcs-cache
+
+# environment
+.env
+.env.*
+
+# build artifacts
+/tmp/
+*.tmp

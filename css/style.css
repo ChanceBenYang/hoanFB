@@ -1,0 +1,354 @@
+:root {}
+@media (max-width: 1599px){}
+@media (max-width: 1399.98px) {}
+@media (max-width: 1199.98px) {}
+@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {}
+@media (max-width: 575.98px) {}
+::-moz-selection { color: #fff;background:#424242;}
+::selection {color: #fff;background:#424242;}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {padding-right:20px;padding-left:20px;}
+a:link,a:visited{color:#424242;text-decoration: none;box-shadow: none;outline: none !important}
+a:hover{text-decoration: underline;box-shadow: none;outline: none !important}
+button{box-shadow: none!important;outline: none !important}
+.btn-primary,.btn-primary:link,.btn-primary:visited{font-weight: bold;background: #00c8c8;border:1px solid #00c8c8;color:#fff !important;}
+.btn-primary:hover{text-decoration: none;background: #009595;border-color: #009595}
+.btn-line {background: #06c755;color: #fff !important;text-decoration: none;font-weight: bold;}
+.btn-line:hover{text-decoration: none}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {pointer-events: none;opacity: .65;background: #ddd;border:1px solid #ddd}
+.form-control,.form-select{background-color: #f2f2f2 !important;border:#f2f2f2 1px solid;font-weight: bold;}
+.form-control::placeholder {color: #ccc;}
+img{max-width: 100%}
+body{font-size: 17px;background:#fbf5f0;color:#000;overflow-x: hidden;height: 100%;padding-right: 0px !important;overflow-y: scroll !important;}
+h3{font-size: 20px;color:#000;font-weight: bold;border-bottom: solid #eee 1px;padding: 10px 0px;margin-bottom: 15px;}
+p{font-size: 17px;text-align: justify;line-height:1.8em}
+.colN,.colT,.colD{padding-top:5px;padding-bottom:5px;}
+.colN{color:#999;}
+.colT{color: #666;text-align: end}
+.colD{font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight:700;letter-spacing: 1px}
+@media (max-width: 1599px){}
+@media (max-width: 1399.98px) {
+body,p{font-size: 16px;}}
+@media (max-width: 1199.98px) {
+body,p{font-size: 15px;}}
+@media (max-width: 991.98px) {
+body,p{font-size: 14px;}
+h3{font-size: 19px;}}
+@media (max-width: 767.98px) {
+h3{font-size: 16px;font-weight: normal !important;}}
+
+/*navbar*/
+.navbar{background: #fff;border-bottom: 1px solid #eee;box-shadow: 0px 0px 10px rgba(0,0,0,0.03)}
+.navbar-brand{width:160px;font-size: 1em;}
+.navbar-brand img{margin-bottom: 3px;}
+@media (max-width: 1599px){}
+@media (max-width: 1399.98px) {}
+@media (max-width: 1199.98px) {}
+@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {}
+@media (max-width: 575.98px) {}
+
+/*基礎版型*/
+.main{margin-top:70px;}
+.mainStep{}
+.mainStep .col-step{border-right: 1px solid #ddd;text-align: center;padding-top: 10px;padding-bottom: 10px;margin-bottom: 15px;color: #afa69f}
+.mainStep .col-step:last-child{border-right: none}
+.mainStep .col-step .stepN{font-size: 11px;font-weight: bold;background: #d5c9bf;display: inline-block;padding: 2px 10px 1px;border-radius: 20px;color: #fff;}
+.mainStep .col-step .stepT{font-weight: bold;}
+.mainStep .col-step.active{color:#000;}
+.mainStep .col-step.active .stepN{background: #f7931e;color: #fff}
+.mainForm{background: #fff;border: 1px solid #eee;box-shadow: 0px 0px 10px rgba(0,0,0,0.01);padding:50px;border-radius:15px;}
+.mainForm h3 span{font-size: 15px;margin-left:5px;}
+.mainForm h3.h3_H{color: #f7931e;}
+.mainForm input.form-check-input[type="checkbox"]{width:30px;height:30px;accent-color: #f7931e;border-radius: 0px;background-color: #fff;border:2px solid #f7931e;margin-top: 0px;box-shadow:none}
+.mainForm input.form-check-input:hover[type="checkbox"]{background-color: #fff;box-shadow:none}
+.mainForm input.form-check-input[type="checkbox"]:checked {background-color: #f7931e !important;border-color: #f7931e !important;outline: none;box-shadow:none}
+.mainForm input.form-check-input[type="radio"]{width:30px;height:30px;accent-color: #f7931e;background-color: #fff;border:2px solid #f7931e;margin-top: 0px;box-shadow:none}
+.mainForm input.form-check-input:hover[type="radio"]{background-color: #fff;box-shadow:none}
+.mainForm input.form-check-input[type="radio"]:checked {background-color: #f7931e !important;border-color: #f7931e !important;outline: none;box-shadow:none}
+.mainForm input.form-check-input-deny[type="radio"]:checked{background-color: #e84545 !important;border-color: #e84545 !important;}
+.mainForm input.form-check-input-agree[type="radio"]:checked{background-color: #39b54a !important;border-color: #39b54a !important;}
+.btn_PREV{font-size: 14px;font-weight: bold;}
+@media (max-width: 1599px){
+.mainForm{padding:40px;border-radius:12px}}
+@media (max-width: 1399.98px) {
+.mainForm{padding:30px;border-radius:10px}}
+@media (max-width: 1199.98px) {
+.mainForm{padding:20px;border-radius:8px}}
+@media (max-width: 991.98px) {
+.mainForm{padding:15px;border-radius:6px}}
+@media (max-width: 767.98px) {
+.mainStep .col-step{border-right: 1px solid #eee;;padding-top:0px;padding-bottom:0px;margin-bottom: 10px;color: #bbb}
+.mainStep .col-step .stepN{font-size: 8px;font-weight: normal;padding: 1px 7px 1px;}
+.mainStep .col-step .stepT{font-weight: normal;}
+.mainForm{padding:12px;}
+.mainForm h3 span{font-size: 12px;margin-left:3px;font-weight: normal;}}
+@media (max-width: 575.98px) {}
+
+/*基礎卡片版型*/
+.selectPet,.selectPlan{list-style: none;padding: 0px;margin-bottom: 0px;line-height: 1.3;}
+.selectPet li,.selectPlan li{background: #fff;border:2px solid #eee;padding:0px;border-radius:12px;margin-bottom:12px;position: relative}
+.selectPet li:last-child,.selectPlan li:last-child{margin-bottom: 0px;;}
+.selectT{padding: 15px 30px 12px;border-bottom: 1px solid #eee;}
+.selectT h3{border-bottom:none;padding:  0px;margin-bottom: 0px;}
+.btn_delete{background: #fff;border:1px solid #ccc;box-shadow: 0px 0px 4px rgba(0,0,0,.1) !important;color:#ccc;border-radius: 30px;position: absolute;right: -10px;top: -10px}
+.btn_delete:hover{background: #ff4f4f;color:#fff;border:1px solid #ff4f4f}
+.cardPlanT{display: flex;align-items: center}
+.selectB{background: #fcfcfc;padding: 20px 30px 15px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.selectPet_info{display: block;padding: 15px 30px 15px 0px;color:#aaa;font-size: 17px;}
+label.selectPet_info{cursor: pointer}
+.Pet{font-weight: bold;color: #000}
+.Pet_Avatar{width:60px;height:60px;background:#ddd;border:2px solid #fff;border-radius:30px;box-shadow: 0px 1px 4px rgba(0,0,0,0.2)}
+.Pet_ID,.Pet_ID span{font-size: 12px;color:#888;font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight:normal;}
+.col-status{text-align: end;font-size: 14px;}
+.Pet_status{color:#666;font-size: 15px;font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight:500;}
+.selectPet .selectT{position: relative}
+.selectPet .selectT .selectPet_check,.selectPet .selectT .selectPet_info{padding:0px}
+.selectPet .selectB .cardQ{margin-bottom: 0px;padding-bottom: 0px;border: none}
+@media (max-width: 1399.98px) {
+.selectT,.selectB{padding-left:20px;padding-right:20px;}
+.selectPet_info{padding: 15px 20px 15px 0px;font-size: 16px;}
+.Pet_Avatar{width:54px;height:54px;border-radius:27px;}}
+@media (max-width: 1199.98px) {
+.selectT,.selectB{padding-left:18px;padding-right:18px;}
+.selectPet_info{font-size: 15px;}
+.Pet_Avatar{width:50px;height:50px;border-radius:25px;}
+.col-status,.Pet_status{text-align: start;margin-top:2px;font-size: 12px;color:#888;}}
+@media (max-width: 991.98px) {
+.selectT,.selectB{padding-left:15px;padding-right:15px;}
+.selectPet_info{font-size: 14px;}
+.Pet_Avatar{width:46px;height:46px;border-radius:23px;}
+.selectPet_info{flex-direction: column;align-items: flex-start;padding: 15px 20px 15px 0px;}}
+@media (max-width: 991.98px) {
+.selectPet li,.selectPlan li{border:1px solid #eee;}
+.selectT,.selectB{padding:10px}}
+@media (max-width: 767.98px) {
+.Pet{font-weight: normal;}
+.col-status,.Pet_status{margin-top: 0px;}}
+    
+/*step-1*/
+.mainForm .btn-search{padding: 10px 30px;border-radius: 40px;font-size:18px;font-weight: bold;display: inline-flex;align-items: center;margin:15px 0px;}
+.mainForm .btn-search:hover,.mainForm .btn-search:active{background: #00888d;border:1px solid #00888d}
+.mainForm .btn-search:focus{background:#00c8c8;border:1px solid #00c8c8}
+.mainForm .btn-search img{width:30px}
+#Result_selectPet{display: none;background: #fff;border: 2px solid #eee;border-radius: 12px;margin-top:20px;}
+#Result_selectPet.active{display: block}
+.selectPet li:hover{border: 2px solid #ddd;}
+.selectPet li.checked{border: 2px solid #f7931e;background: #fff;}
+.selectPet li .upload_avatar{width:100%;position: absolute;height:100%;background: transparent;border:none;top: 0px;left: 0px}
+.selectPet li .selectPet_check{margin:0px;padding: 20px 0px 20px 30px;outline: none !important}
+.selectPet li.disable{background: #fff;border:2px solid #f9f9f9;pointer-events: none}
+.selectPet li.disable .Pet_Avatar{opacity: .5}
+.selectPet li.disable .selectPet_info,.selectPet li.disable .Pet,.selectPet li.disable .Pet_ID,.selectPet li.disable .Pet_ID span{color:#ccc;}
+.selectPet li.disable input.form-check-input[type="checkbox"]{border-color:#eee;}
+.selectPet li.disable .Pet_status{color:#ff4f4f;}
+@media (max-width: 1599px){}
+@media (max-width: 1399.98px) {}
+@media (max-width: 1199.98px) {}
+@media (max-width: 991.98px) {
+#Result_selectPet{border: 1px solid #eee;}
+.selectPet li:hover{border: 1px solid #ddd;}
+.selectPet li.checked{border: 1px solid #f7931e;}
+.selectPet li .selectPet_check{padding: 20px 0px 20px 15px;}}
+
+/*step-2*/
+.selectPlan .selectPet_info{padding: 0px;}
+.selectPlan .selectB h3{padding-top: 0px;}
+.selectPlan .cardQ{margin-bottom:10px;padding-bottom:10px;}
+.selectPlan .cardQ:last-child{border:none;margin-bottom:0px;padding-bottom:0px;}
+.cardDia{border: 2px solid #eee;border-radius: 8px;padding: 10px 20px;align-items: center;margin-top: 5px;background: #fff;}
+.cardDia_T{color:#999;}
+.cardDia_N{color:#000;}
+.cardPlan{border: 2px solid #eee;border-radius:12px;padding:15px 30px;display: flex;align-items: center;margin-bottom:5px;background: #fff}
+.cardPlan.fadeout{opacity: .4}
+.cardPlan.checked{border: 2px solid #f7931e;opacity: 1}
+.cardPlan .selectPet_check{margin-right:30px;}
+.cardPlan .selectR{flex:auto;cursor: pointer}
+.cardPlanPv{color:#999;font-weight: bold;background:#fff;border:1px solid #ddd;display: inline-block;padding: 1px 7px;border-radius: 20px;font-size: 13px;margin-right: 3px;}
+.cardPlanName{color:#000;font-weight: bold;margin-right: 3px;}
+.cardPlanBrief{font-size: .9em;color:#888;margin-top:5px;}
+.cardPlanPrice{font-size: 16px;display: flex;align-items: center;color: #999}
+.cardPlanPrice span{font-size: 26px;color:#ff4f4f;margin-right: 5px;font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight:700;letter-spacing: 1px}
+.cardPlanModal{font-size: 14px;border:none;color:#fff;margin-left:6px;background:#00c8c8;padding: 2px 6px 2px 4px;border-radius: 15px}
+.cardPlanModal:hover{color:#fff;background: #009595;}
+@media (max-width: 1599px){}
+@media (max-width: 1399.98px) {
+.cardPlanPrice span{font-size: 23px;}}
+@media (max-width: 1199.98px) {
+.cardPlan .selectPet_check{margin-right:20px;}
+.cardPlanPrice span{font-size: 20px;}}
+@media (max-width: 991.98px) {
+.cardPlan{padding:15px;border: 1px solid #eee;}
+.cardPlan.checked{border: 1px solid #f7931e}
+.cardPlan .selectPet_check{margin-right:15px;}
+.cardPlanPrice span{font-size: 18px;}}
+@media (max-width: 767.98px) {
+.cardPlanPv{font-size: 12px;}
+.cardPlanPrice{font-size: 15px;justify-content: flex-end;border-top: 1px solid #aaa;padding-top: 10px;margin-top: 10px;}
+.cardPlanPrice span{font-size: 17px;}}
+
+/*step-3*/
+.cardQ{border-bottom:4px dotted #eee;margin-bottom:20px;padding-bottom:20px;}
+.cardQ .Qnum{font-size:24px;font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight: 700;color: #ccc}
+.cardQ p{margin-bottom: 0px;font-size: 1em;line-height: 1.7em;color: #000;}
+.cardQ p span{color:#e84545;font-weight: bold;font-size: 12px;display: inline-block;}
+.cardQ p a{color:#00c8c8;font-weight: bold;}
+.cardQ .note{font-size: 14px;line-height: 1.5em;color:#aaa;margin-top: 5px;}
+.cardQ .form-check-inline{display: inline-flex;align-items: center}
+.cardQ .form-check-inline .form-check-label{margin-left: 8px;}
+.cardQ .form-check-inline input.form-check-input[type="radio"]{width:30px;height:30px;accent-color: #00c8c8;background-color: #f2f2f2;border:2px solid #f2f2f2;margin-top: 0px;box-shadow:none;cursor: pointer}
+.cardQ .form-check-inline input.form-check-input[type="radio"]:hover{border:2px solid #39b54a;}
+.cardQ .form-check-inline input.form-check-input-deny[type="radio"]:hover{border:2px solid #e84545;}
+.cardQ .cardQ_btn{background: transparent;padding: 0px;border:none;color: #00c8c8;font-weight: bold;}
+.text-box{margin: 30px 0px}
+.text-boxT{background: #00c8c8;padding: 10px 20px;border-radius:10px;display: flex;align-items: center;color:#fff;font-weight: bold;}
+.text-boxT .cardQ_btn{background: transparent;padding: 0px;border:none;color: #fff;font-weight: bold;}
+.text-boxT .selectPet_check{margin-right:10px;}
+.text-boxT .selectPet_checkNote{margin-left:6px;opacity: .8}
+.text-boxT a.selectPet_checkLink,.text-boxT a.selectPet_checkLink:link,.text-boxT a.selectPet_checkLink:visited{margin-left:6px;color:#fff;}
+.text-boxNote{border:1px solid #f7931e;color:#f7931e;font-size: .95em;padding: 5px 20px;border-radius: 20px;font-weight: bold;margin: 30px 0px}
+.BoxHearing{background-color: #fff5d3;border-radius: 10px;border: 1px solid #e7ab2e;padding:30px 40px;margin: 30px 0px;position: relative;font-size: 1em;}
+.BoxHearing p{line-height: 1.5em;font-weight: bold;}
+.BoxHearing:after {content: "";position: absolute;display: block;width: 295px;height: 120px;bottom: 0px;right: 30px;background-image: url("../images/system_hearing.255319b.png");background-repeat: no-repeat;background-size: contain;}
+#member,#privacy,#terms{background: #f9f9f9;overflow-x: hidden;overflow-y: auto;height: 40vh;padding:30px 40px;line-height: 1.7em;margin:10px 0px 30px;border-radius: 10px;}
+#member pre,#privacy pre,#terms pre{white-space: pre-wrap;word-wrap: break-word;}
+#member span,#privacy span,#terms span{font-weight: bold;}
+#member h4,#privacy h4,#terms h4{font-weight: bold;font-size: 18px;margin-bottom: 0px;color:#e84545;}
+#member a,#privacy a,#terms a{color:#e84545;border:1px solid #e84545;padding: 2px 10px;border-radius: 20px;font-size: 15px;font-weight: bold;}
+#member a:hover,#privacy a:hover,#terms a:hover{text-decoration: none;background: #e84545;color:#fff;}
+#member::-webkit-scrollbar,#privacy::-webkit-scrollbar,#terms::-webkit-scrollbar{width:5px;overflow-x:hidden;border-radius: 5px}
+#member::-webkit-scrollbar-track,#privacy::-webkit-scrollbar-track,#terms::-webkit-scrollbar-track{background-color:transparent;border-radius: 5px} 
+#member::-webkit-scrollbar-thumb,#privacy::-webkit-scrollbar-thumb,#terms::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);border-radius: 5px}
+@media (max-width: 1599px){}
+@media (max-width: 1399.98px) {}
+@media (max-width: 1199.98px) {
+.text-box{margin: 20px 0px}
+.BoxHearing{padding:30px 30px 60px;margin:20px 0px;}
+.BoxHearing:after {width: 206px;height:84px;right:10px;}}
+@media (max-width: 991.98px) {
+.cardQ{padding:10px}
+.cardQ p{font-size: 1.15em;line-height: 1.5em;}
+.cardQ .note{font-size: 13px;line-height: 1.4em;}}
+@media (max-width: 767.98px) {
+.cardQ .note{font-size: 12px;}
+.BoxHearing{padding:20px 20px 40px;}
+.BoxHearing:after {width: 147px;height:60px;}
+#member,#privacy{padding:15px;line-height: 1.5em;}}
+@media (max-width: 575.98px) {}
+
+/*step-4*/
+.step_4 .selectB{background: #fff;padding:10px 30px}
+.step_4 .selectB .cardPlan{margin-bottom: 0px;}
+.step_4 .selectB .cardPlan .selectR {cursor:auto;}
+.payment-method-form .d-flex span{padding:0px 5px;color:#ccc;}
+.card_P{width:100px;margin-left: 15px;}
+@media (max-width: 991.98px) {
+.payment-method-form .d-flex span{padding:0px 3px;}
+.card_P{width:60px;margin-left: 10px;}}
+@media (max-width: 767.98px) {
+.step_4 .selectB{padding:10px;}}
+
+/*otp*/
+.otp{padding: 50px 0px;text-align: center}
+.otp h1{font-weight: bold;font-size: 2em;}
+.otp p {text-align: center;margin-bottom: 0px;}
+.otp p span{font-weight: bold;color:#f7931e}
+.otp p.note {color:#ff4f4f;margin-bottom: 30px;}
+.otp p.note a:link{text-decoration: underline;color:#ff4f4f;font-weight: bold;}
+.otp h6{color:#999;}
+.otp .btn-sendotp:disabled{color:#888;background:#fff;border:1px solid #ccc}
+.otp .btn-outline-primary{color:#00c8c8;border:1px solid #00c8c8;}
+.otp .btn-outline-primary:hover{color:#fff;background: #00c8c8;}
+.otp .btn-sendotp .available{display: block}
+.otp .btn-sendotp .unavailable{display: none}
+.otp .btn-sendotp:disabled .available{display: none}
+.otp .btn-sendotp:disabled .unavailable{display: block}
+.otp .timer_status{margin-bottom: 15px;}
+.otp .timer_status .timer{font-size: 14px;background:#ff4f4f;font-weight: bold;color:#fff;display: inline-block;border-radius: 30px;padding: 4px 12px;}
+.otp .timer_status .expired{color:#ff4f4f;font-weight: bold;}
+.otp .timer_status.timer_status_expired .timer{}
+.otp .timer_status.timer_status_expired .expired{display: inline-block;}
+.otp .btn-otp{border-radius: 30px;padding-left:40px;padding-right: 40px }
+
+/*finish*/
+.finish{padding: 50px 0px}
+.finish h1{font-weight: bold;}
+.finish p span{font-weight: bold;color:#f7931e}
+.statusOK{font-weight: bold;color:#39b54a}
+.statusERROR{font-weight: bold;color:#e84545}
+
+/*footer*/
+footer{text-align: center;margin: 20px 0px;color: #888;font-size: 14px;;}
+@media (max-width: 767.98px) {
+footer{margin:5px 0px 90px;color: #ccc;font-size: 10px;}}
+
+/*sidebar*/
+.sidebar{position: sticky;top: 100px}
+.sidebar h5{font-weight: bold;border-bottom:4px solid #000;font-size:24px;padding-bottom:20px;margin-bottom:30px;display: inline-block}
+.sidebar h6{font-size: 1em;}
+.sidebar ul{padding-left: 20px;}
+.sidebar a:link,.sidebar a:visited{color:#666;}
+.sidebar a:hover,.sidebar a:active{text-decoration: none;color: #00c8c8}
+#BoxRemind{border:1px solid #ccc;padding:15px 20px;margin-bottom: 10px;font-size: .8em;color: #000;border-radius:10px}
+#BoxRemind h6{font-size:14px;}
+#BoxRemind ul{font-size:14px;margin-bottom: 0px;padding-left: 20px;}
+#BoxRemind.checked{border: 1px solid #eee}
+#BoxRemind.checked h6,#BoxRemind.checked ul,#BoxRemind.checked ul a:link,#BoxRemind.checked ul a:visited{color:#aaa;}
+.actionbar{background: #fff;}
+#btn-next{border-radius: 30px}
+.sidebarB{font-size: .8em;padding-top:25px;color: #aaa}
+.sidebarB ul {padding-left:15px;}
+@media (max-width: 767.98px) {
+.sidebar{margin-top: 30px;border-top: 1px solid #eee;padding-top: 20px;}
+.sidebar h5{font-weight: bold;border-bottom:2px solid #000;font-size:20px;padding-bottom:10px;margin-bottom:10px;display: inline-block}
+#BoxRemind{margin-bottom: 0px;}
+.actionbar{position: fixed;bottom: 0px;left: 0px;right:0px;padding: 7px 20px 15px;box-shadow: 0px 0px 10px rgba(0,0,0,0.1)}
+.sidebarB{font-size: 13px;padding-top:10px;}}
+
+/*insurance*/
+.modal-content{border-radius:15px;border:1px solid #ddd}
+.modal-header {padding:30px 40px}
+.modal-header .cardPlanPv{font-size:16px;}
+.modal-header .selectT{width:100%;padding: 0px;border: none;}
+.modal-header .selectPet_info{padding:0px}
+.modal-body{padding:30px 40px}
+.insurance .row:nth-child(2n+1){background: #f9f9f9;}
+.insurance .colN{font-size: 16px;}
+.insurance .colD{font-weight: normal;}
+.insurance .colD span{font-size: 18px;color:#000;font-family:"Outfit", sans-serif;font-optical-sizing: auto;font-weight:700;}
+.insurance .colD .cardPlanPv{font-size: 16px;}
+.insurance .colTotal{}
+.insurance .colTotal span{font-size:36px;color:#ff4f4f;}
+.insuranceB{font-size: 14px;margin-top: 20px;color:#888;border-top:1px solid #eee;padding-top: 20px}
+.insuranceB h6{font-size: 14px;}
+.insuranceB ul li{margin-bottom: 3px;}
+.Tred{color:#ff4f4f;}
+.Icon_info{width:20px;height:20px;line-height:20px;text-align:center;background:#f7931e;color:#fff;font-size:12px;border-radius:10px;border:none;font-family: "Outfit", sans-serif;font-weight:700;top: -2px;position: relative}
+@media (max-width:  991.98px) {
+.modal-header,.modal-body{padding:20px 30px}
+.insurance .colN{font-size: 14px;flex:2;}
+.insurance .colD span{font-size: 16px;}
+.insurance .colD .cardPlanPv{font-size: 14px;}
+.Icon_info{width:16px;height:16px;line-height:16px;}}
+@media (max-width:  767.98px) {
+.modal-header,.modal-body{padding:15px 20px}
+.insurance .colN{font-size: 13px;}
+.insurance .colD span{font-size: 14px;}
+.insurance .colD .cardPlanPv{font-size: 12px;}
+.Icon_info{width:14px;height:14px;line-height:14px;}}
+
+/**/
+#ModalMap .modal-body{padding: 0px;;}
+#ModalMap .modal-body iframe{width:100% !important;}
+#ModalMap .modal-body a:link,#ModalMap .modal-body a:visited{color:#00c8c8 !important;font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
