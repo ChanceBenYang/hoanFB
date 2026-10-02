@@ -133,6 +133,8 @@ label.selectPet_info{cursor: pointer}
 .mainForm .btn-search img{width:30px}
 #Result_selectPet{display: none;background: #fff;border: 2px solid #eee;border-radius: 12px;margin-top:20px;}
 #Result_selectPet.active{display: block}
+.Boxnotice{background-color: #fff5d3;border-radius: 10px;border: 1px solid #e7ab2e;padding:30px 40px;margin: 30px 0px;position: relative;font-size: .9em;}
+.Boxnotice ul{margin-bottom: 0px;}
 .selectPet li:hover{border: 2px solid #ddd;}
 .selectPet li.checked{border: 2px solid #f7931e;background: #fff;}
 .selectPet li .upload_avatar{width:100%;position: absolute;height:100%;background: transparent;border:none;top: 0px;left: 0px}
@@ -210,7 +212,7 @@ label.selectPet_info{cursor: pointer}
 .BoxHearing{background-color: #fff5d3;border-radius: 10px;border: 1px solid #e7ab2e;padding:30px 40px;margin: 30px 0px;position: relative;font-size: 1em;}
 .BoxHearing p{line-height: 1.5em;font-weight: bold;}
 .BoxHearing:after {content: "";position: absolute;display: block;width: 295px;height: 120px;bottom: 0px;right: 30px;background-image: url("../images/system_hearing.255319b.png");background-repeat: no-repeat;background-size: contain;}
-#member,#privacy,#terms{background: #f9f9f9;overflow-x: hidden;overflow-y: auto;height: 40vh;padding:30px 40px;line-height: 1.7em;margin:10px 0px 30px;border-radius: 10px;}
+#member,#privacy,#terms{background: #f9f9f9;overflow-x: hidden;overflow-y: auto;height: 20vh;padding:30px 40px;line-height: 1.7em;margin:10px 0px 30px;border-radius: 10px;}
 #member pre,#privacy pre,#terms pre{white-space: pre-wrap;word-wrap: break-word;}
 #member span,#privacy span,#terms span{font-weight: bold;}
 #member h4,#privacy h4,#terms h4{font-weight: bold;font-size: 18px;margin-bottom: 0px;color:#e84545;}

@@ -12,48 +12,70 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 //step3.php-------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollableDiv = document.getElementById("member");
-    const checkbox = document.getElementById("CheckboxTerm1");
-    const scrollableDiv2 = document.getElementById("privacy");
-    const checkbox2 = document.getElementById("CheckboxTerm2");
-    
-    scrollableDiv.addEventListener("scroll", function () {
-        // 檢查是否滑動到底部
-        if (scrollableDiv.scrollTop + scrollableDiv.clientHeight >= scrollableDiv.scrollHeight) {
-            checkbox.checked = true;
+    const termBlocks = [
+        { element: document.getElementById("member"), checkbox: document.getElementById("CheckboxTerm1") },
+        { element: document.getElementById("privacy"), checkbox: document.getElementById("CheckboxTerm2") },
+        { element: document.getElementById("terms"), checkbox: document.getElementById("CheckboxTerm3") }
+    ];
+    const termCheckboxes = termBlocks.map(({ checkbox }) => checkbox).filter(Boolean);
+    const queryButton = document.getElementById("BtnResult");
+    const updateQueryButton = () => {
+        if (queryButton) {
+            queryButton.disabled = termCheckboxes.length !== 3 || !termCheckboxes.every(checkbox => checkbox.checked);
+        }
+    };
+
+    termCheckboxes.forEach(checkbox => checkbox.addEventListener("change", updateQueryButton));
+    updateQueryButton();
+
+    termBlocks.forEach(({ element, checkbox }) => {
+        if (element && checkbox) {
+            const checkIfRead = () => {
+                if (element.scrollHeight - element.clientHeight - element.scrollTop <= 2) {
+                    checkbox.checked = true;
+                    updateQueryButton();
+                }
+            };
+
+            element.addEventListener("scroll", checkIfRead, { passive: true });
+            element.addEventListener("scrollend", checkIfRead);
+            checkIfRead();
         }
     });
-    
-    scrollableDiv2.addEventListener("scroll", function () {
-        // 檢查是否滑動到底部
-        if (scrollableDiv2.scrollTop + scrollableDiv2.clientHeight >= scrollableDiv2.scrollHeight) {
-            checkbox2.checked = true;
-        }
-    });
-    
 });
 
 //step1.php-------------------------
 
 //寵物試算按鈕
-document.getElementById("BtnResult").addEventListener("click", function() {
-    setTimeout(() => {
-        const element = document.getElementById('Result_selectPet');
-        if (element) {
-        element.classList.add('active');
-        document.getElementById('BtnResult').classList.add('d-none');
+const btnResult = document.getElementById("BtnResult");
+if (btnResult) {
+    btnResult.addEventListener("click", function(event) {
+        const requiredTerms = ["CheckboxTerm1", "CheckboxTerm2", "CheckboxTerm3"]
+            .map(id => document.getElementById(id));
+        if (requiredTerms.some(checkbox => !checkbox || !checkbox.checked)) {
+            event.preventDefault();
+            return;
         }
-        
-        // 隱藏 Bootstrap 5 的 modal（id="ModalLoading"）
-        const modalEl = document.getElementById('ModalLoading');
-        if (modalEl) {
-          const modalInstance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl); // 確保 modal 已有實例
-          modalInstance.hide();
-        }
-        
-        
-    }, 2000);
-});
+
+        setTimeout(() => {
+            const element = document.getElementById('Result_selectPet');
+            const btnResultCurrent = document.getElementById('BtnResult');
+            if (element) {
+                element.classList.add('active');
+            }
+            if (btnResultCurrent) {
+                btnResultCurrent.classList.add('d-none');
+            }
+
+            // 隱藏 Bootstrap 5 的 modal（id="ModalLoading"）
+            const modalEl = document.getElementById('ModalLoading');
+            if (modalEl) {
+              const modalInstance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl); // 確保 modal 已有實例
+              modalInstance.hide();
+            }
+        }, 2000);
+    });
+}
 
 
 //寵物試算選擇
@@ -61,20 +83,28 @@ const selectPet_checkboxs = document.querySelectorAll('.selectPet_checkbox');
 
 selectPet_checkboxs.forEach(el => el.addEventListener('change', event => {
     if (el.checked) {
-        el.parentElement.parentElement.parentElement.parentElement.classList.add("checked");
+        const parentPanel = el.closest('.pet-card');
+        if (parentPanel) {
+            parentPanel.classList.add("checked");
+        }
     } else {
-        el.parentElement.parentElement.parentElement.parentElement.classList.remove("checked");
+        const parentPanel = el.closest('.pet-card');
+        if (parentPanel) {
+            parentPanel.classList.remove("checked");
+        }
     }
-    
+
     const anyChecked = Array.from(selectPet_checkboxs).some(checkbox => checkbox.checked);
+    const boxRemind = document.getElementById("BoxRemind");
+    const btnNext = document.getElementById("btn-next");
+
     if (anyChecked) {
-        document.getElementById("BoxRemind").classList.add("checked");
-        document.getElementById("btn-next").classList.remove("disabled");
+        if (boxRemind) boxRemind.classList.add("checked");
+        if (btnNext) btnNext.classList.remove("disabled");
     } else {
-        document.getElementById("BoxRemind").classList.remove("checked");
-        document.getElementById("btn-next").classList.add("disabled");
+        if (boxRemind) boxRemind.classList.remove("checked");
+        if (btnNext) btnNext.classList.add("disabled");
     }
-    
 }));
 
 
